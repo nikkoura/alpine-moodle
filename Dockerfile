@@ -32,6 +32,7 @@ ENV MOODLE_URL=https://github.com/moodle/moodle/archive/MOODLE_39_STABLE.tar.gz 
     MOODLE_SITENAME=New-Site \
     MOODLE_USERNAME=moodleuser \
     MOODLE_PASSWORD=PLEASE_CHANGEME \
+    MOODLE_DATAROOT=/var/www/moodledata/ \
     SMTP_HOST=smtp.gmail.com \
     SMTP_PORT=587 \
     SMTP_USER=your_email@gmail.com \
@@ -45,4 +46,3 @@ ENV MOODLE_URL=https://github.com/moodle/moodle/archive/MOODLE_39_STABLE.tar.gz 
     max_input_vars=1000
 
 RUN curl --location $MOODLE_URL | tar xz --strip-components=1 -C /var/www/html/
-

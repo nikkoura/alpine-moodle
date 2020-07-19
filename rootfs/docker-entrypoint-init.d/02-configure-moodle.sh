@@ -23,7 +23,7 @@ if [ ! -f /var/www/html/config.php ]; then
     ENV_VAR='var' php -d max_input_vars=1000 /var/www/html/admin/cli/install.php \
         --lang=$MOODLE_LANGUAGE \
         --wwwroot=$SITE_URL \
-        --dataroot=/var/www/moodledata/ \
+        --dataroot=$MOODLE_DATAROOT \
         --dbtype=$DB_TYPE \
         --dbhost=$DB_HOST \
         --dbname=$DB_NAME \
@@ -83,16 +83,3 @@ else
     php -d max_input_vars=1000 /var/www/html/admin/cli/upgrade.php --non-interactive --allow-unstable
     php -d max_input_vars=1000 /var/www/html/admin/cli/maintenance.php --disable
 fi
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -55,6 +55,7 @@ Define the ENV variables in docker-compose.yml file
 | MOODLE_SITENAME             | New-Site             |                                                                          |
 | MOODLE_USERNAME             | moodleuser           |                                                                          |
 | MOODLE_PASSWORD             | PLEASE_CHANGEME      |                                                                          |
+| MOODLE_DATAROOT             | /var/www/moodledata/ |                                                                          |
 | SMTP_HOST                   | smtp.gmail.com       |                                                                          |
 | SMTP_PORT                   | 587                  |                                                                          |
 | SMTP_USER                   | your_email@gmail.com |                                                                          |
